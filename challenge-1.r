@@ -1,3 +1,5 @@
+# Bartels_Challange_1 
+
 library(assertthat)
 
 # Complete the following statements following the the assignment below:
@@ -16,6 +18,21 @@ library(assertthat)
 # inhabitants_sum <- …
 # density <- …
 
+# Erstellung der Vektoren
+bezirk <- c("Wandsbek", "Hamburg-Nord", "Hamburg-Mitte", "Altona", "Eimsbüttel", "Harburg", "Bergedorf")
+einwohner <- c(441012, 314593, 301543, 275264, 267051, 169426, 130260)
+bevoelkerungsdichte <- c(2990, 5443, 2121, 3534, 5362, 1353, 841)
+bezirksamtsleiter <- c("Ritzenhoff", "Boelz", "Droßmann", "von Berg", "Gätgens", "Fredenhagen", "Dornquast")
+flaeche <- c(TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE)
+
+# Erstellung des Data Frames
+hamburg_df <- data.frame(bezirk, einwohner, bevoelkerungsdichte, bezirksamtsleiter, flaeche)
+
+# groeße der Gesamtbevoelkerung berechnen 
+inhabitants_sum <- sum(einwohner)
+
+# durchschnittliche Bevoelkerungsdichte berechnen 
+density <- mean(bevoelkerungsdichte)
 
 if(
   assert_that(
@@ -69,3 +86,5 @@ if(
 ) {
   writeLines("Congrats! 10/10 points!")
 }
+
+
