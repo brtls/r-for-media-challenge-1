@@ -25,7 +25,7 @@ bevoelkerungsdichte <- c(2990, 5443, 2121, 3534, 5362, 1353, 841)
 bezirksamtsleiter <- c("Ritzenhoff", "Boelz", "Droßmann", "von Berg", "Gätgens", "Fredenhagen", "Dornquast")
 flaeche <- c(TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE)
 
-# Erstellung des Data Frames
+# Erstellung des Data-Frames
 hamburg_df <- data.frame(bezirk, einwohner, bevoelkerungsdichte, bezirksamtsleiter, flaeche)
 
 # groeße der Gesamtbevoelkerung berechnen 
